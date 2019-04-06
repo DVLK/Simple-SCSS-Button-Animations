@@ -1,0 +1,166 @@
+@charset "UTF-8";
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #4c71d8;
+  border: 4px #4c71d8 solid;
+  padding: 15px;
+  min-width: 130px;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:not(.btn-outline):not(.btn-slide-right):not(.btn-slide-left):not(.btn-slide-up):not(.btn-slide-down):not(.btn-keep-color):hover {
+  border-color: #3760d3;
+  background: #3760d3;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-round {
+  border-radius: 100px;
+}
+
+.btn-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-arrow:after {
+  display: block;
+  margin-left: 5px;
+  width: 0px;
+  content: "»";
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-arrow:hover {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-arrow:hover:after {
+  width: 10px;
+  opacity: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #4c71d8;
+}
+
+.btn-outline:hover {
+  background: #4c71d8;
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-to-square {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-to-square:hover {
+  border-radius: 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-to-circle {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-to-circle:hover {
+  border-radius: 100px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-slide-right {
+  color: #4c71d8;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #4c71d8), color-stop(50%, transparent));
+  background: linear-gradient(to right, #4c71d8 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-slide-right:hover {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-position: left bottom;
+}
+
+.btn-slide-left {
+  color: #4c71d8;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #4c71d8), color-stop(50%, transparent));
+  background: linear-gradient(to left, #4c71d8 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-slide-left:hover {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-position: right bottom;
+}
+
+.btn-slide-up {
+  color: #4c71d8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #4c71d8), color-stop(50%, transparent));
+  background: linear-gradient(to top, #4c71d8 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-slide-up:hover {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-position: bottom;
+}
+
+.btn-slide-down {
+  color: #4c71d8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #4c71d8), color-stop(50%, transparent));
+  background: linear-gradient(to bottom, #4c71d8 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-slide-down:hover {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-position: top;
+}
+/*# sourceMappingURL=buttonStyle.css.map */

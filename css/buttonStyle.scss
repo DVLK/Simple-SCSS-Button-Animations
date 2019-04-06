@@ -1,0 +1,145 @@
+$color: rgb(76, 113, 216);
+$textColor: white;
+
+
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: $color;
+    border: 4px $color solid;
+    padding: 15px;
+    min-width: 130px;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: $textColor;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:not(.btn-outline):not(.btn-slide-right):not(.btn-slide-left):not(.btn-slide-up):not(.btn-slide-down):not(.btn-keep-color):hover{
+        border-color: darken($color, 5%);
+        background: darken($color, 5%);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.btn-round{
+    border-radius: 100px;
+}
+
+.btn-arrow{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:after{
+        display: block;
+        margin-left: 5px;
+        width: 0px;
+        content: "»";
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    &:hover{
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:after{
+            width: 10px;
+            opacity: 1;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+.btn-outline{
+    background: transparent;
+    color: $color;
+
+    &:hover{
+        background: $color;
+        color: $textColor;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.btn-to-square{
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        border-radius: 0px;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.btn-to-circle{
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        border-radius: 100px;
+        transition: 0.2s ease-in-out;
+    }
+    
+}
+
+.btn-slide-right{
+    color: $color;
+    background: linear-gradient(to right, $color 50%, transparent 50%);;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        color: $textColor;
+        transition: 0.2s ease-in-out;
+        background-position: left bottom;
+    }
+}
+
+
+.btn-slide-left{
+    color: $color;
+    background: linear-gradient(to left, $color 50%, transparent 50%);;
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        color: $textColor;
+        transition: 0.2s ease-in-out;
+        background-position: right bottom;
+    }
+}
+
+
+.btn-slide-up{
+    color: $color;
+    background: linear-gradient(to top, $color 50%, transparent 50%);;
+    background-size: 100% 200%;
+    background-position: top;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        color: $textColor;
+        transition: 0.2s ease-in-out;
+        background-position: bottom;
+    }
+}
+
+.btn-slide-down{
+    color: $color;
+    background: linear-gradient(to bottom, $color 50%, transparent 50%);;
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        color: $textColor;
+        transition: 0.2s ease-in-out;
+        background-position: top;
+    }
+}

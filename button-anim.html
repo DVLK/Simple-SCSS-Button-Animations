@@ -1,0 +1,63 @@
+<head>
+    <style>
+        html, body, a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #202020;
+            margin: 2%;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .container *{
+            margin: 15px;
+        }
+
+        #author{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+        }
+        </style>
+        <link rel="stylesheet" href="css/buttonStyle.css">
+</head>
+
+
+
+<body>
+    <div id="author">Developed by Dennis Völk</div>
+    <h1>Simple SCSS Button Animations</h1><br><br>
+    <h2>Normal Buttons</h2>
+    <div class="container">
+        <button>Normal Button</button><br><br><br>
+        <button class="btn-outline">Outline Button</button><br><br><br>
+        <button class="btn-round">Round Button</button><br><br><br>
+    </div>
+
+    <br><h2>Slide Buttons</h2>
+    <div class="container">
+        <button class="btn-slide-right">To the right</button><br><br><br>
+        <button class="btn-slide-left">To the left</button><br><br><br>
+        <button class="btn-slide-up">Go up</button><br><br><br>
+        <button class="btn-slide-down">Go down</button><br><br><br>
+    </div>
+
+    <br><h2>Shape Buttons</h2>
+    <div class="container">
+        <button class="btn-round btn-to-square">From Circle To Square</button><br><br><br>
+        <button class="btn-to-circle">From Circle To Square</button><br><br><br>
+    </div>
+
+    <br><h2>Arrow Buttons</h2>
+    <div class="container">
+        <button class="btn-arrow">From Circle To Square</button><br><br><br>
+    </div>
+
+    <br><h2>Keep The Background-Color On Hover</h2>
+    <div class="container">
+        <button class="btn-keep-color">Keep The Color</button><br><br><br>
+    </div>
+</body>
